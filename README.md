@@ -8,6 +8,28 @@ The Primary objectives are:
         Analys the taxes and other expenses related to the rent amount.
         How to change the taxes in deferent different cities in Brazil
         How keeping animals affect the rent amount
+        
+## Abstract
+
+The House Rental Price Dataset shows the House rental prices of different regions in Brazil. It is 
+Include the multiple attributes such as City, Area (Square Feet), No. of Rooms, No. of Bathrooms, 
+packing spaces, Floor, whether pets are allowed or not, whether furnished or not, Homeowners 
+association tax (R$), Rent amount (R$), Municipal property tax (R$) and Fire insurance value 
+(R$). Therefore, this dataset facilitates the analysis the house rental price in Brazil.
+
+By understanding these factors that influence the Rent price of House, it is easy to house holder 
+determined the price and this helps the customer who are already looking to rent a House in Brazil 
+to find house according to his price and according to his needs.
+
+So here’s are my Research Question Regarding this Data set.
+
+        1. Do the property taxes relate to the area?
+        2. Does the fire insurance relate to when the house is furnished or not?
+        3. Does the location relate to the Property taxes?
+        4. Does the fire insurance price relate to the location?
+        5. Does the rent amount relate to the when the house is furnished or not?
+        6. Does the rent amount relate to the keeping animal?
+        7. Does the rent amount relate to the city?
 
 
 ## General Discussion and conclusions
