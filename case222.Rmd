@@ -1,0 +1,265 @@
+---
+title: "Brazil House Rent"
+author: "Danuka"
+date: "`r Sys.Date()`"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r eval=FALSE, include=FALSE}
+install.packages("tidyverse")
+install.packages("outliers")
+
+```
+
+```{r include=FALSE}
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(outliers)
+
+```
+
+## After that Attach the dataset to R and start the Analysis.
+
+```{r}
+
+BrazilianHousestoRent <- readxl::read_xlsx("BrazilianHousestoRent.xlsx")
+str(BrazilianHousestoRent)  #column names and data type
+colnames(BrazilianHousestoRent) #only column names
+
+```
+# DATA PREPOSESING
+
+### First,we have to check there is any missing values.In our data set there is no any missing values.
+
+### Afterthat,we have to handle outliears. i used to numarical method to do this.
+
+```{r include=FALSE}
+clean_dataFile = BrazilianHousestoRent
+# Specify the variables for which you want to remove outliers
+variables_of_interest <- c('hoa', 'area',"rent amount","property tax","fire insurance")
+
+# Function to remove outliers using IQR
+remove_outliers <- function(x) {
+  Q1 <- quantile(x, 0.25, na.rm = TRUE)
+  Q3 <- quantile(x, 0.75, na.rm = TRUE)
+  IQR <- Q3 - Q1
+  lower_bound <- Q1 - 1.5 * IQR
+  upper_bound <- Q3 + 1.5 * IQR
+  x[x < lower_bound | x > upper_bound] <- NA
+  return(x)
+}
+
+# Apply the remove_outliers function to specified variables
+clean_dataFile[variables_of_interest] <- lapply(clean_dataFile[variables_of_interest], remove_outliers)
+
+clean_dataFile = na.omit(clean_dataFile)
+
+
+```
+
+
+
+```{r include=FALSE}
+BrazilHouserent=clean_dataFile
+str(BrazilHouserent)
+
+```
+
+## Now I replace the 0  in floor variable instead of "-" symbol
+
+```{r}
+BrazilHouserent=clean_dataFile
+str(BrazilHouserent)
+glimpse(BrazilHouserent)
+BrazilHouserent <- BrazilHouserent %>%
+  mutate(floor = ifelse(floor == "-", 0, floor))
+View(BrazilHouserent)
+
+```
+
+
+# DATA ANALYSIS
+
+
+## 1. Does the fire insurance relate to when the house is furnished or not ?
+
+```{r}
+ggplot(data = BrazilHouserent)+
+  geom_boxplot(mapping =aes(x=furniture,y=`fire insurance`,fill=furniture) )+
+  labs(x="Furnished State Of The House",y="Fire Insurance")+
+  ggtitle("BoxPlot of Furnished State vs Fire Insurance")+
+  scale_fill_discrete(name = "furniture")
+
+```
+
+
+
+```{r}
+summary_by_category <- by(BrazilHouserent$`fire insurance`, BrazilHouserent$furniture, fivenum)
+summary_by_category
+```
+
+
+```{r}
+kruskal.test(BrazilHouserent$`fire insurance` ~BrazilHouserent$furniture, data=BrazilHouserent)
+qchisq(0.95,1,lower.tail = TRUE)
+```
+
+## 2. Does the property taxes relate to the area ?
+
+```{r}
+ggplot(data = BrazilHouserent)+
+  geom_point(mapping =aes(x=area,y=`property tax`) )+
+  labs(x="Area(Square Feet)",y="Property Tax")+
+  ggtitle("Scatterplot of Property Taxes vs Property Area")
+```
+
+
+
+```{r}
+lm1=lm(BrazilHouserent$`property tax`~BrazilHouserent$area)
+plot(lm1)
+```
+
+
+```{r}
+crr=cor(BrazilHouserent$area,BrazilHouserent$`property tax`,method = "spearman")
+crr
+
+```
+
+## 3. Does the location relate to the Property taxes ?
+
+```{r}
+ggplot(data = BrazilHouserent)+
+  geom_boxplot(mapping =aes(x=city,y=`property tax`,fill=city) )+
+  labs(x="City",y="Property tax")+
+  ggtitle("BoxPlot of City vs Property tax")+
+  scale_fill_discrete(name = "Cities in Brazil")
+```
+
+
+```{r}
+summary_by_category <- by(BrazilHouserent$`property tax`, BrazilHouserent$city, fivenum)
+summary_by_category
+```
+
+
+```{r}
+city_tax_summary <- BrazilHouserent %>%
+  group_by(city) %>%
+  summarize(mean_tax = mean(`property tax`, na.rm = TRUE),
+            median_tax = median(`property tax`, na.rm = TRUE),
+            max_tax = max(`property tax`, na.rm = TRUE),
+            min_tax = min(`property tax`, na.rm = TRUE))
+            
+city_tax_summary
+```
+
+
+
+```{r}
+kruskal.test(BrazilHouserent$`property tax` ~BrazilHouserent$city, data=BrazilHouserent)
+```
+
+
+
+```{r}
+ggplot(BrazilHouserent, aes(sample = `property tax`)) +
+  geom_qq() +
+  facet_wrap(~ city, scales = "free") +
+  stat_qq_line() +
+  labs(title = "Q-Q Plots for Each Category")
+```
+
+## 4 .Does  the fire insurance price relate to the location ?
+
+```{r}
+ggplot(data = BrazilHouserent)+
+  geom_boxplot(mapping =aes(x=city,y=`fire insurance`,fill=city) )+
+  labs(x="City",y="Fire Insurance")+
+  ggtitle("BoxPlot of City vs Fire Insurance")+
+  scale_fill_discrete(name = "city")
+
+```
+
+
+
+
+```{r}
+city_FireInsu_summary <- BrazilHouserent %>%
+  group_by(city) %>%
+  summarize(mean_Insurance = mean(`fire insurance`, na.rm = TRUE),
+            median_Insurance = median(`fire insurance`, na.rm = TRUE),
+            max_Insurance = max(`fire insurance`, na.rm = TRUE),
+            min_Insurance = min(`fire insurance`, na.rm = TRUE))
+            
+city_FireInsu_summary
+city_counts <- BrazilHouserent %>%
+  count(city)
+city_counts
+```
+
+
+
+
+
+
+```{r}
+kruskal.test(BrazilHouserent$`fire insurance` ~BrazilHouserent$city, data=BrazilHouserent)
+qchisq(0.95,4,lower.tail = TRUE)
+```
+
+
+
+## 5 .Does the rent amount relate to the keeping animal?
+
+
+
+
+```{r}
+ggplot(data = BrazilHouserent)+
+  geom_boxplot(mapping =aes(x=`keeping animal`,y=`rent amount`,fill=`keeping animal` ))+
+  labs(x="Keeping animals",y="Rent Amount")+
+  ggtitle("BoxPlot of Keeping animals vs Rent Amount")+
+  scale_fill_discrete(name = "Animals Accept or Not")
+```
+
+
+
+
+
+```{r}
+summary_by_category <- by(BrazilHouserent$`rent amount`, BrazilHouserent$`keeping animal`, fivenum)
+summary_by_category
+```
+
+
+
+
+```{r}
+kruskal.test(BrazilHouserent$`rent amount` ~BrazilHouserent$`keeping animal`, data=BrazilHouserent)
+qchisq(0.95,4,lower.tail = TRUE)
+```
+
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+
+```{r}
+
+```
+
+
