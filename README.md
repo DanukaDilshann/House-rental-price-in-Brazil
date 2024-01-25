@@ -1,5 +1,5 @@
 
-# [Analyzing Home Rental Prices In Brazil 🏠](https://danukadi.github.io/-Analyzing-Home-rental-prices-in-Brazil/)
+# [Analyzing Home Rental Prices In Brazil 🏠](https://danukadi.github.io/Data-Analysis-1/)
 The dataset we are using contain house rent prices from different area of Brazil. The dataset includes Property area, how many bathrooms and bedrooms are there, how taxes are included in different areas, whether pets are allowed or not and the House is furnished or not.
 Then our main goal is to understand those facts and identify which variables are related to house rent price go up or down in Brazil.
 
