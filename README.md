@@ -1,11 +1,11 @@
 # -Analyzing-Home-rental-prices-in-Brazil 🏠
-The dataset we are using contain house rent prices different area of Brazil. The dataset includes Property area, how many bathrooms and bedrooms are there, how to  include taxes in deferent different area, whether pets are allowed or not and the House is furnished or not.
+The dataset we are using contain house rent prices from different area of Brazil. The dataset includes Property area, how many bathrooms and bedrooms are there, how taxes are included in different areas, whether pets are allowed or not and the House is furnished or not.
 Then our main goal is to understand those facts and identify which variables are related to house rent price go up or down in Brazil.
 
 The Primary objectives are:
 
-        Analys the rent amount distribution
-        Analys the taxes and other expenses related to the rent amount.
+        Analyse the rent amount distribution
+        Analyse the taxes and other expenses related to the rent amount.
         How to change the taxes in deferent different cities in Brazil
         How keeping animals affect the rent amount
         
@@ -17,8 +17,8 @@ packing spaces, Floor, whether pets are allowed or not, whether furnished or not
 association tax (R$), Rent amount (R$), Municipal property tax (R$) and Fire insurance value 
 (R$). Therefore, this dataset facilitates the analysis the house rental price in Brazil.
 
-By understanding these factors that influence the Rent price of House, it is easy to house holder 
-determined the price and this helps the customer who are already looking to rent a House in Brazil 
+By understanding these factors that influence the Rent price of House, it is easy for house holder 
+to determined the price and this helps the customer who are already looking to rent a House in Brazil 
 to find house according to his price and according to his needs.
 
 So here’s are my Research Question Regarding this Data set.
