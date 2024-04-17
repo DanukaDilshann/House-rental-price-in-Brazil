@@ -54,10 +54,37 @@ The above plot represents the scatter plot of Area versus Property Taxes. Observ
 <p align="center">
 <img src="Images/furnished.png" width="700" height="300">
 </p>
-The boxplot represents the relationship between Fire Insurance and the Furnished State of the House. From the boxplot, it's evident that there is skewness present, indicating a violation of the Normality assumption. Consequently, parametric methods cannot be applied for analysis. Therefore, applying the Wilcox rank sum-test, we obtain a test statistic of 9135178 . As the test statistic exceeds the critical value of 3.841459, we reject the null hypothesis (Ho). This suggests significant differences exist between the median of the groups at a 5% significance level, indicating that furnished and not furnished houses have different medians.
+The boxplot represents the relationship between Fire Insurance and the Furnished State of the House. From the boxplot, it's evident that there is skewness present, indicating a violation of the Normality assumption. Consequently, parametric methods cannot be applied for analysis. Therefore, applying the Wilcox rank sum-test,
+<p> </p>
+<p>we obtain a test statistic of 9135178 . As the test statistic exceeds the critical value of 3.841459</p> <p>we reject the null hypothesis (Ho).</p> This suggests significant differences exist between the median of the groups at a 5% significance level, indicating that furnished and not furnished houses have different medians.
 
 Furthermore, upon examining the Five Number Summary within each boxplot, it's notable that the furnished category exhibits the highest median. This leads us to conclude that higher amounts of insurance are available for furnished houses.
 
+<p> </p>
+<p> </p>
+<b>3. Does the location relate to the Property taxes?</b>
+<p> </p>
+<p> </p>
+
+<p align="center">
+<img src="Images/city vs prp.png" width="700" height="900">
+</p>
+
+According to the above table We can see that SÃ£o Paulo homeowners has to pay higher taxes than the other cities. Likewise, the graph shows the boxplot of each city. According to the boxplots we can see that every boxplot has skewness. Also analyze Q-Q plots of each city , we can say that the Normality assumption is violated. Again, using Kruskal Wallis test:
+<p>Kruskal-Wallis chi-squared = 226.15, df = 4
+Critical value = 9.487</p>
+<p>Therefore test stat ≥ c.v we reject null hypothesis </p>
+At 5% significance level We can say that the There is significant differences between the median 
+of the Cities.
+<p> </p>
+<p> </p>
+<p align="center">
+<img src="Images/fivenum.png" width="700" height="200">
+</p>
+
+<p> </p>
+<p> </p>
+The above results present the five-number summary of property taxes for various cities, including the minimum, lower quartile, median, upper quartile, and maximum values respectively. It's evident that residents of Bole Horizonte have higher taxes compared to other cities. Consequently, we can conclude that property taxes are associated with the cities themselves.
 
 
 
