@@ -54,4 +54,4 @@ So here’s are my Research Question Regarding this Data set.
     House owner accepts the keeping animals, the rent amount is increased. therefore, the 
     rent amount is related to the Keeping animal or not        
 
-## [R-markdown file](https://github.com/DaNukaDi/-Analyzing-Home-rental-prices-in-Brazil/blob/main/Brazil%20House%20Rent%20R-Markdown%20Output.pdf)
+## [R-markdown file](https://github.com/DanukaDilshann/House-rental-price-in-Brazil/blob/main/Rmarkdown.pdf)
