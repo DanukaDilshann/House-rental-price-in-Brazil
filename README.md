@@ -32,6 +32,10 @@ So here’s are my Research Question Regarding this Data set.
         6. Does the rent amount relate to the keeping animal?
         7. Does the rent amount relate to the city?
 
+## Data Analysis
+<p align="center">
+  <img src="Images/assingm1.png" width="750" height="300">
+</p>
 
 ## General Discussion and conclusions
 
