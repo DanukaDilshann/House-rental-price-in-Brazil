@@ -34,7 +34,13 @@ So here’s are my Research Question Regarding this Data set.
 
 ## Data Analysis
 <p align="center">
-  <img src="Images/assingm1.png" width="750" height="300">
+  <img src="Images/assump1.png" width="750" height="300">
+</p> 
+
+Based on the above graphs, we can observe **violations of the Normality and Linearity assumptions**. In Figure 1, the data points deviate significantly from the 45° line, indicating a violation of Normality. Additionally, in Figure 2, the data points do not exhibit random scattering around 0, suggesting a violation of the Linearity assumption. Despite attempting transformations, these assumptions remain violated. Therefore, we need to resort to non-parametric methods.
+
+<p align="center">
+  <img src="Images/assump2.png" width="750" height="300">
 </p>
 
 ## General Discussion and conclusions
