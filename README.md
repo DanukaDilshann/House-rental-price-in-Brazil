@@ -39,18 +39,22 @@ So here’s are my Research Question Regarding this Data set.
   <img src="Images/assump1.png" width="750" height="300">
 </p> 
 
-<p>Based on the above graphs, we can observe violations of the Normality and Linearity assumptions. In Figure 1, the data points deviate significantly from the 45° line, indicating a violation of Normality. Additionally, in Figure 2, the data points do not exhibit random scattering around 0, suggesting a violation of the Linearity assumption. Despite attempting transformations, these assumptions remain violated. Therefore, we need to resort to non-parametric methods.</p>
+<p>Based on the above graphs, we can observe violations of the Normality and Linearity assumptions. In Figure 1, the data points deviate significantly from the 45° line, indicating a violation of Normality. Additionally, in Figure 2, the data points do not exhibit random scattering around 0, suggesting a violation of the Linearity assumption. Despite attempting transformations, these assumptions remain violated. Therefore, we need to apply non-parametric methods.</p>
 
 <p align="center">
   <img src="Images/assump2.png" width="750" height="350">
 </p>
-Above Plot represent the Area vs Property taxes Scatter plot. According to the Scatterplot we can see that there is a positive relationship Between Two variable.After Using Spearman correlation(rs), we can see that value is equal to 0.5861. Therefore, rs ≥ Critical Value, We reject H0. We can conclude that There is are positive correlation between two variables.
+The above plot represents the scatter plot of Area versus Property Taxes. Observing the scatterplot, we notice a positive relationship between the two variables. After computing the Spearman correlation (rs), we find its value to be 0.5861. As this value exceeds the critical threshold, we reject the null hypothesis (H0). Thus, we can conclude that there is a positive correlation between the two variables.
 
+<p> </p>
+<p> </p>
 <b>2. Does the fire insurance relate to when the house is furnished or not?</b>
+<p> </p>
+<p> </p>
 <p align="center">
 <img src="Images/furnished.png" width="700" height="300">
 </p>
-The boxplot represents the relationship between Fire Insurance and the Furnished State of the House. From the boxplot, it's evident that there is skewness present, indicating a violation of the Normality assumption. Consequently, parametric methods cannot be applied for analysis. Therefore, employing the Wilcox rank sum-test, we obtain a test statistic of 9135178 with 1 degree of freedom. As the test statistic exceeds the critical value of 3.841459, we reject the null hypothesis (Ho). This suggests significant differences exist between the median of the groups at a 5% significance level, indicating that furnished and not furnished houses have different medians.
+The boxplot represents the relationship between Fire Insurance and the Furnished State of the House. From the boxplot, it's evident that there is skewness present, indicating a violation of the Normality assumption. Consequently, parametric methods cannot be applied for analysis. Therefore, applying the Wilcox rank sum-test, we obtain a test statistic of 9135178 . As the test statistic exceeds the critical value of 3.841459, we reject the null hypothesis (Ho). This suggests significant differences exist between the median of the groups at a 5% significance level, indicating that furnished and not furnished houses have different medians.
 
 Furthermore, upon examining the Five Number Summary within each boxplot, it's notable that the furnished category exhibits the highest median. This leads us to conclude that higher amounts of insurance are available for furnished houses.
 
