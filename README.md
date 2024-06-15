@@ -59,7 +59,7 @@ Upon examining the Five Number Summary within each boxplot, it's notable that th
 <p> </p>
 
 <p align="center">
-<img src="Images/city vs prp.png" width="700" height="900">
+<img src="Images/city vs prp1.png" width="750" height="350">
 </p>
 
 According to the above table We can see that SÃ£o Paulo homeowners has to pay higher taxes than the other cities. Likewise, the graph shows the boxplot of each city. According to the boxplots we can see that every boxplot has skewness. Also analyze Q-Q plots of each city , we can say that the Normality assumption is violated. Again, using 
