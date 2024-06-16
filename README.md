@@ -1,36 +1,39 @@
 
-# [Exploratory Data Analysis Home Rental Prices In Brazil 🏠](https://DanukaDilshann.github.io/Data-Analysis-1/)
-The dataset we are using contain house rent prices from different area of Brazil. The dataset includes Property area, how many bathrooms and bedrooms are there, how taxes are included in different areas, whether pets are allowed or not and the House is furnished or not.
-Then our main goal is to understand those facts and identify which variables are related to house rent price go up or down in Brazil.
+# Exploratory Data Analysis Home Rental Prices In Brazil 🏠
 
-The Primary objectives are:
+## Project Overview
 
-        Analyse the rent amount distribution
-        Analyse the taxes and other expenses related to the rent amount.
-        How to change the taxes in deferent different cities in Brazil
-        How keeping animals affect the rent amount
-        
-## Abstract
+Objective: To analyze the factors influencing house rental prices in different regions of Brazil, helping homeowners determine rental prices and aiding customers in finding houses that meet their needs and budget.
 
-The House Rental Price Dataset shows the House rental prices of different regions in Brazil. It is 
-Include the multiple attributes such as City, Area (Square Feet), No. of Rooms, No. of Bathrooms, 
-packing spaces, Floor, whether pets are allowed or not, whether furnished or not, Homeowners 
-association tax (R$), Rent amount (R$), Municipal property tax (R$) and Fire insurance value 
-(R$). Therefore, this dataset facilitates the analysis the house rental price in Brazil.
+- Research Questions:
+  - Do property taxes relate to the area?
+  - Does fire insurance relate to whether the house is furnished or not?
+  - Does location affect property taxes?
+  - Does the fire insurance price relate to the location?
+  - Does the rent amount relate to whether the house is furnished or not?
+  - Does the rent amount relate to keeping animals?
+  - Does the rent amount relate to the city?
 
-By understanding these factors that influence the Rent price of House, it is easy for house holder 
-to determined the price and this helps the customer who are already looking to rent a House in Brazil 
-to find house according to his price and according to his needs.
+## Data 
+Dataset: The dataset contains information on 10,692 houses, each described by 13 features. This dataset, sourced from Kaggle, includes various details relevant to real estate analysis. The features in the dataset typically include:
+Variables:
 
-So here’s are my Research Question Regarding this Data set.
+- City: The city where the property is located
+- Area: Property area in square feet
+- Room: Number of rooms
+- Bathrooms: Number of bathrooms
+- Parking Spaces: Number of parking spaces
+- Floor: The floor where the property is located
+- Keeping Animals: Whether pets are allowed or not
+- Furniture: Whether the property is furnished or not
+- Hoa: Homeowners’ association tax (R$)
+- Rent Amount: Rent amount (R$)
+- Property Tax: Municipal property tax (R$)
+- Fire Insurance: Fire insurance value (R$)
+- Total Rent: Sum of all values (R$)
+  
+   - You can access and explore the dataset through the following Kaggle link: [Dataset](https://www.kaggle.com/datasets/rubenssjr/brasilian-houses-to-rent).
 
-        1. Do the property taxes relate to the area?
-        2. Does the fire insurance relate to when the house is furnished or not?
-        3. Does the location relate to the Property taxes?
-        4. Does the fire insurance price relate to the location?
-        5. Does the rent amount relate to the when the house is furnished or not?
-        6. Does the rent amount relate to the keeping animal?
-        7. Does the rent amount relate to the city?
 
 ## Data Analysis
 <b>1. Do the property taxes relate to the area?</b>
