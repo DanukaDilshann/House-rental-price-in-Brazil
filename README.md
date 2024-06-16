@@ -77,23 +77,14 @@ The above results present the five-number summary of property taxes for various 
 
 ## General Discussion and conclusions
 
-    • As the Spearman correlation value, we could conclude that there is a positive correlation
-    between Area and property taxes. That means property taxes are related to the Property 
-    area.
-    
-    • If the House is furnished the fire Insurance value is high. That’s mean, Fire insurance is
-    related to the Furnished or not.
-    
-    • The property taxes vary from city to city In Brazil. Some cities charge a higher rate, and 
-    some cities charge a lower rate.
-    
-    • The Fire Insurance varies from city to city. Some Cities have faced forest fires several
-    times in the year. Therefore, those city householders have to pay higher taxes than the 
-    others. In our case, São Paulo citizens have to pay higher taxes than the other city 
-    citizens.
-    
-    • If customers who are rent a new house depends on whether pets are allowed or not. If the 
-    House owner accepts the keeping animals, the rent amount is increased. therefore, the 
-    rent amount is related to the Keeping animal or not        
+- There is a positive relationship between the area of a property and its property taxes. Larger properties tend to have higher property taxes.
+
+- Furnished houses generally have higher fire insurance values. This indicates that fire insurance costs are related to whether a house is furnished or not.
+
+- Property taxes vary significantly across different cities in Brazil. Some cities impose higher property tax rates, while others have lower rates.
+
+- Fire insurance costs also vary by city. Cities that frequently experience forest fires tend to have higher fire insurance premiums. Specifically, in our case, citizens of São Paulo pay higher fire insurance premiums compared to residents of other cities.
+
+- The rental price of a house is influenced by whether pets are allowed. If house owners permit pets, the rent amount tends to be higher. Therefore, the rent amount is related to the policy on keeping animals.       
 
 ## [R-markdown file](https://github.com/DanukaDilshann/House-rental-price-in-Brazil/blob/main/Rmarkdown.pdf)
