@@ -20,7 +20,7 @@ Upon examining the Five Number Summary within each boxplot, it's notable that th
 
 <p> </p>
 <p> </p>
-<b>3. Does the location relate to the Property taxes?</b>
+<b><a name="c">3. Does the location relate to the Property taxes?</a></b>
 <p> </p>
 <p> </p>
 
@@ -42,7 +42,7 @@ The above results present the five-number summary of property taxes for various 
 
 <p> </p>
 <p> </p>
-<b>4. Does the fire insurance price relate to the location?</b>
+<b><a name="d">4. Does the fire insurance price relate to the location?</a></b>
 <p> </p>
 <p> </p>
 <table>
@@ -55,7 +55,7 @@ In Brazil they have to face forest fire several times in the year. Therefore, we
 
 <p> </p>
 <p> </p>
-<b>5. Does the rent amount relate to the keeping animal?</b>
+<b><a name="e">5. Does the rent amount relate to the keeping animal?</a></b>
 <p> </p>
 <p> </p>
 <table>
