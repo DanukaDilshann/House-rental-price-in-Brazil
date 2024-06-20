@@ -6,11 +6,11 @@
 Objective: To analyze the factors influencing house rental prices in different regions of Brazil, helping homeowners determine rental prices and aiding customers in finding houses that meet their needs and budget.
 
 - Research Questions:
-  - <a href="a"> Do property taxes relate to the area?</a>
+  - <a href="DataAnalysis.md/#a"> Do property taxes relate to the area?</a>
   - <a href="DataAnalysis.md/#b"> Does fire insurance relate to whether the house is furnished or not?</a>
-  - [Does location affect property taxes?]
-  - [Does the fire insurance price relate to the location?]
-  - [Does the rent amount relate to keeping animals?]
+  - <a href="DataAnalysis.md/#c"> Does location affect property taxes?</a>
+  - <a href="DataAnalysis.md/#d"> Does the fire insurance price relate to the location?</a>
+  - <a href="DataAnalysis.md/#e">  Does the rent amount relate to keeping animals?</a>
 
 ## Data 
 Dataset: The dataset contains information on 10,692 houses, each described by 13 features. This dataset, sourced from Kaggle, includes various details relevant to real estate analysis. The features in the dataset typically include:
