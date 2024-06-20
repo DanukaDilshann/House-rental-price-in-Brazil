@@ -1,5 +1,5 @@
 ## Data Analysis
-<b>1. Do the property taxes relate to the area?</b>
+<b><a id="a">1. Do the property taxes relate to the area?</a></b>
 
 <p align="center">
   <img src="Images/assump2.png" width="750" height="350">
@@ -8,7 +8,7 @@ The above plot represents the scatter plot of Area versus Property Taxes. Observ
 
 <p> </p>
 <p> </p>
-<b>2. Does the fire insurance relate to when the house is furnished or not?</b>
+<b><a id="a">2. Does the fire insurance relate to when the house is furnished or not?</a></b>
 <p> </p>
 <p> </p>
 <p align="center">
