@@ -7,7 +7,7 @@ Objective: To analyze the factors influencing house rental prices in different r
 
 - Research Questions:
   - <a href="a"> Do property taxes relate to the area?</a>
-  - <a href="a"> Does fire insurance relate to whether the house is furnished or not?</a>
+  - <a href="b"> Does fire insurance relate to whether the house is furnished or not?</a>
   - [Does location affect property taxes?]
   - [Does the fire insurance price relate to the location?]
   - [Does the rent amount relate to keeping animals?]
