@@ -10,9 +10,7 @@ Objective: To analyze the factors influencing house rental prices in different r
   - Does fire insurance relate to whether the house is furnished or not?
   - Does location affect property taxes?
   - Does the fire insurance price relate to the location?
-  - Does the rent amount relate to whether the house is furnished or not?
   - Does the rent amount relate to keeping animals?
-  - Does the rent amount relate to the city?
 
 ## Data 
 Dataset: The dataset contains information on 10,692 houses, each described by 13 features. This dataset, sourced from Kaggle, includes various details relevant to real estate analysis. The features in the dataset typically include:
@@ -76,7 +74,9 @@ According to the above table We can see that SÃ£o Paulo homeowners has to pay 
 <p> </p>
 The above results present the five-number summary of property taxes for various cities, including the minimum, lower quartile, median, upper quartile, and maximum values respectively. It's evident that residents of Bole Horizonte have higher taxes compared to other cities. Consequently, we can conclude that property taxes are associated with the cities themselves.
 
+<b>3. Does the fire insurance price relate to the location?</b>
 
+<b>3. Does the rent amount relate to the keeping animal?</b>
 
 ## General Discussion and conclusions
 
