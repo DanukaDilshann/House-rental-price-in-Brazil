@@ -8,7 +8,7 @@ The above plot represents the scatter plot of Area versus Property Taxes. Observ
 
 <p> </p>
 <p> </p>
-<b><a id="a">2. Does the fire insurance relate to when the house is furnished or not?</a></b>
+<b><a name="a">2. Does the fire insurance relate to when the house is furnished or not?</a></b>
 <p> </p>
 <p> </p>
 <p align="center">
